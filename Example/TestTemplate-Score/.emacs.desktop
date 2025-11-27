@@ -1,0 +1,103 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Sep 19 12:17:02 2024
+;; Desktop file format version 208
+;; Emacs version 29.4
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (26347 35230 102849 118000) (desktop . "208") "laurie@tux" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-ADBO-Source Code Pro-regular-normal-normal-*-13-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "gray80") (background-color . "#181a26") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 10) (right-fringe . 10) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "green") (font-parameter) (environment) (sticky) (last-focus-update . t) (frameset--id . "947F-CB84-8920-E47D") (frameset--mini t . t) (height . 56) (width . 155) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . "wayland-0") (explicit-name)) ((min-height . 16) (min-width . 20) (min-height-ignore . 12) (min-width-ignore . 14) (min-height-safe . 4) (min-width-safe . 4) (min-pixel-height . 272) (min-pixel-width . 160) (min-pixel-height-ignore . 204) (min-pixel-width-ignore . 112) (min-pixel-height-safe . 68) (min-pixel-width-safe . 32)) hc (pixel-width . 1280) (pixel-height . 943) (total-width . 160) (total-height . 55) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 640) (pixel-height . 943) (total-width . 80) (total-height . 55) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 640) (pixel-height . 650) (total-width . 80) (total-height . 38) (normal-height . 0.6852846401718584) (normal-width . 1.0) (buffer "emacsTemplates.ly" (selected . t) (hscroll . 0) (fringes 10 10 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 549) (start . 149)) (prev-buffers ("vn2.ly" 1 61) ("TestTemplate-Score" 1 1177) ("vn1.ly" 1 62) ("vlc.ly" 1 62) ("vla.ly" 1 99) ("score.ly" 1 143) ("emacsTemplates.ly" 149 325) ("*scratch*" 1 146))) (leaf (last . t) (pixel-width . 640) (pixel-height . 293) (total-width . 80) (total-height . 17) (normal-height . 0.3147153598281418) (normal-width . 1.0) (buffer "score.ly" (selected) (hscroll . 0) (fringes 10 10 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 143) (start . 1)) (prev-buffers ("TestTemplate-Score" 1 363) ("emacsTemplates.ly" 149 659)))) (vc (last . t) (pixel-width . 640) (pixel-height . 943) (total-width . 80) (total-height . 55) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 640) (pixel-height . 259) (total-width . 80) (total-height . 15) (normal-height . 0.26589354205040405) (normal-width . 1.0) (buffer "vn1.ly" (selected) (hscroll . 0) (fringes 10 10 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 62) (start . 1)) (prev-buffers ("vn2.ly" 1 32))) (leaf (pixel-width . 640) (pixel-height . 188) (total-width . 80) (total-height . 11) (normal-height . 0.20280474649406688) (normal-width . 1.0) (buffer "vn2.ly" (selected) (hscroll . 0) (fringes 10 10 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 32) (start . 1))) (leaf (pixel-width . 640) (pixel-height . 220) (total-width . 80) (total-height . 13) (normal-height . 0.2357984994640943) (normal-width . 1.0) (buffer "vla.ly" (selected) (hscroll . 0) (fringes 10 10 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 99) (start . 1)) (prev-buffers ("vn2.ly" 1 32))) (leaf (last . t) (pixel-width . 640) (pixel-height . 276) (total-width . 80) (total-height . 16) (normal-height . 0.2955032119914347) (normal-width . 1.0) (buffer "vlc.ly" (selected) (hscroll . 0) (fringes 10 10 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 62) (start . 1)) (prev-buffers ("vn2.ly" 1 61))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/Documents/Charts/Transpositions/Example/TestTemplate-Score/" "~/Documents/Charts/Transpositions/Example/TestTemplate-Score/emacsTemplates.ly"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/laurie/Documents/Charts/Transpositions/Example/TestTemplate-Score/emacsTemplates.ly"
+  "emacsTemplates.ly"
+  'LilyPond-mode
+  '(font-lock-mode)
+  549
+  '(564 nil)
+  nil
+  nil
+  '((buffer-display-time 26347 35190 364668 927000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1182 337 415 437 1183 353 325 659 549))))
+
+(desktop-create-buffer 208
+  "/home/laurie/Documents/Charts/Transpositions/Example/TestTemplate-Score/score.ly"
+  "score.ly"
+  'LilyPond-mode
+  '(font-lock-mode)
+  143
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26347 35190 364669 543000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "TestTemplate-Score"
+  'dired-mode
+  '(font-lock-mode)
+  363
+  '(nil nil)
+  t
+  '("/home/laurie/Documents/Charts/Transpositions/Example/TestTemplate-Score/")
+  '((buffer-display-time 26347 35052 708455 917000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/laurie/Documents/Charts/Transpositions/Example/TestTemplate-Score/vlc.ly"
+  "vlc.ly"
+  'LilyPond-mode
+  '(font-lock-mode)
+  62
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26347 35190 364670 736000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/laurie/Documents/Charts/Transpositions/Example/TestTemplate-Score/vn2.ly"
+  "vn2.ly"
+  'LilyPond-mode
+  '(font-lock-mode)
+  32
+  '(61 nil)
+  nil
+  nil
+  '((buffer-display-time 26347 35190 364670 235000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (32 32 32 61))))
+
+(desktop-create-buffer 208
+  "/home/laurie/Documents/Charts/Transpositions/Example/TestTemplate-Score/vla.ly"
+  "vla.ly"
+  'LilyPond-mode
+  '(font-lock-mode)
+  99
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26347 35190 364670 475000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/laurie/Documents/Charts/Transpositions/Example/TestTemplate-Score/vn1.ly"
+  "vn1.ly"
+  'LilyPond-mode
+  '(font-lock-mode)
+  62
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26347 35190 364669 949000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 2.0 Partwise//EN"
+                                "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.0">
+  <movement-title>Moon and Sand</movement-title>
+  <identification>
+    <encoding>
+      <software>Frescobaldi 3.3.0</software>
+      <encoding-date>2024-10-16</encoding-date>
+    </encoding>
+    <creator type="composer">Alec Wilder/Morty Palitz</creator>
+    <creator type="poet">William Engvick</creator>
+    <piece>Medium Bossa</piece>
+    <rights type="copyright">Ludlow Music, 1941/Regent Music , 1946</rights>
+    <rights type="tagline" />
+  </identification>
+  <part-list />
+</score-partwise>

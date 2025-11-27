@@ -1,0 +1,22 @@
+# Ignore PDFs
+*.pdf
+*.PDF
+
+# Ignore Logs
+*.log
+
+# Media files
+*.mp3
+*.mp4
+*.jpg
+*.png
+*.jpeg
+*.mid
+*.midi
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar

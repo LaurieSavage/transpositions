@@ -1,0 +1,103 @@
+\version "2.25.16"
+
+\header {
+  title = "Smooth"
+  composer = "Rob Thomas and Itall Shur"
+  poet = "Rob Thomas"
+  piece = "Medium Latin Rock"
+  copyright = "1999"
+  tagline = "Edited by LS for Paradiso Connection"
+}
+
+\paper {
+  #(set-paper-size "a4")
+}
+
+global = {
+  \key c \major
+  \time 4/4
+  \partial 2
+}
+
+chordNames = \chordmode {
+  \global
+  % Chords follow here.
+
+}
+
+melody = \relative c' {
+  \global
+  % Music follows here.
+  \partial 2
+  r8 d16 (e g8 e) | a1 | r8 gis a b c b4 a16 b| c4 a2.| r4 < d, gis>4 r8 ees d c |
+  e4 <a, c>2. | r8 ees' d c d c d c | d4 <a c>2 r8 gis |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+
+}
+
+
+tenorSax = \relative c'' {
+  \global
+  \transposition bes,
+  % Music follows here.
+  \melody
+
+}
+
+electricBass = \relative c, {
+  \global
+  % Music follows here.
+
+}
+
+verse = \lyricmode {
+  % Lyrics follow here.
+  1 1 1 1 1 1 1 1 1 1 1 1 Man it's a
+  hot one.
+  Like sev -- en in -- ches from the midday sun
+
+}
+
+tenorSaxPart = \new Staff \with {
+  instrumentName = "Tenor Sax" shortInstrumentName = "TSax"
+  midiInstrument = "tenor sax"
+} \transpose bes c'' \tenorSax
+
+trumpetPart =\new Staff \with {
+  instrumentName = "Trumpet" shortInstrumentName = "Tpt"
+  midiInstrument = "trumpet"
+} \transpose bes c' \tenorSax
+
+
+electricBassPart = \new Staff \with {
+  midiInstrument = "electric bass (finger)"
+  instrumentName = "Electric bass"
+} { \clef "bass_8" \electricBass }
+
+leadSheetPart = <<
+  \new ChordNames \chordNames
+  \new Staff { \melody }
+  \addlyrics { \verse }
+>>
+
+\score {
+  <<
+    \leadSheetPart
+    \tenorSaxPart
+    \trumpetPart
+    \electricBassPart
+  >>
+  \layout {
+  }
+  \midi {
+    \tempo 4=100
+  }
+}
