@@ -1,4 +1,4 @@
-\version "2.25.16"
+\version "2.25.28"
 
 \include "lilyjazz.ily"
 \include "jazzchords.ily"

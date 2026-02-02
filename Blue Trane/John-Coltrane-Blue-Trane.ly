@@ -1,4 +1,4 @@
-\version "2.24.3"
+\version "2.24.4"
 
 #(set-global-staff-size 22)
 
@@ -175,4 +175,12 @@ Applying conversion: 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
 %{
 convert-ly (GNU LilyPond) 2.25.4  convert-ly: Processing `'...
 Applying conversion: 2.23.14, 2.24.0, 2.25.0, 2.25.1, 2.25.3, 2.25.4
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.25.32  convert-ly: Processing `'...
+Applying conversion: 2.25.0, 2.25.1, 2.25.2, 2.25.3, 2.25.4, 2.25.5,
+2.25.6, 2.25.8, 2.25.9, 2.25.11, 2.25.12, 2.25.13, 2.25.18, 2.25.22,
+2.25.23, 2.25.24, 2.25.25, 2.25.26, 2.25.28, 2.25.30, 2.25.31, 2.25.32
 %}

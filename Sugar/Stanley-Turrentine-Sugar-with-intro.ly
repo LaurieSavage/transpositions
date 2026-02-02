@@ -1,4 +1,4 @@
-\version "2.24.3"
+\version "2.25.28"
 \include "lilyjazz.ily"
 today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 aTrip = { \times 2/3 {a16 bes a} g8 }

@@ -1,4 +1,4 @@
-\version "2.24.3"
+\version "2.25.28"
 
 
 % Header definitions
@@ -845,7 +845,7 @@ drumSetMusic = {
       %\omit Staff.TimeSignature
   
       % The following gets rid of the volta spanner (first-ending spanner), but doesn't eliminate the "1."
-      %\set Score.voltaSpannerDuration = \musicLength 1*0
+      %\set Score.voltaSpannerDuration = 0
       \set Score.skipBars = ##t
       \override MultiMeasureRest.expand-limit = 1
       \set Score.rehearsalMarkFormatter = #format-mark-box-barnumbers

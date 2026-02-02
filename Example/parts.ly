@@ -1,5 +1,5 @@
 %%%%% parts.ly
-\version "2.11.23"
+\version "2.25.28"
 % Use convert-ly to update this file if the version is different to the lilypond you use.
 
 global = {

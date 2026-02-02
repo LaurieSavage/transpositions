@@ -1,12 +1,12 @@
-\version "2.24.3"
+\version "2.24.4"
 
 #(set-global-staff-size 22)
 
-\include "lilyjazz.ily"
-\include "jazzchords.ily"
-\include "jazzextras.ily"
-\include "swing.ly"
-\include "TabA.ily"
+%\include "lilyjazz.ily"
+%\include "jazzchords.ily"
+%\include "jazzextras.ily"
+%\include "swing.ly"
+%\include "TabA.ily"
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
@@ -124,7 +124,7 @@ theNotesHarmony = \relative c'' {
       instrumentName = "Part I "
       shortInstrumentName = "I "
     }
-    \tripletFeel 8 \theNotesMelody
+    %\tripletFeel 8 \theNotesMelody
 
     \new Staff
     \with {
@@ -132,7 +132,7 @@ theNotesHarmony = \relative c'' {
       instrumentName = "Part II "
       shortInstrumentName = "II "
     }
-    \tripletFeel 8 \theNotesHarmony
+    %\tripletFeel 8 \theNotesHarmony
   >>
 
   \layout {
@@ -146,43 +146,43 @@ theNotesHarmony = \relative c'' {
   }
 }
 
-\book {
-  \tabA
-  \bookOutputSuffix "TabA"
-  \score {
-    <<
-      \new ChordNames \theChords
-      \new Staff
-      \with {
-        midiInstrument = "flute"
-        instrumentName = "Part I "
-        shortInstrumentName = "I "
-      }
-      \tripletFeel 8 \theNotesMelody
+% \book {
+%   \tabA
+%   \bookOutputSuffix "TabA"
+%   \score {
+%     <<
+%       \new ChordNames \theChords
+%       \new Staff
+%       \with {
+%         midiInstrument = "flute"
+%         instrumentName = "Part I "
+%         shortInstrumentName = "I "
+%       }
+%       \tripletFeel 8 \theNotesMelody
 
-      \new Staff
-      \with {
-        midiInstrument = "flute"
-        instrumentName = "Part II "
-        shortInstrumentName = "II "
-      }
-      \tripletFeel 8 \theNotesHarmony
-    >>
+\new Staff
+\with {
+  midiInstrument = "flute"
+  instrumentName = "Part II "
+  shortInstrumentName = "II "
+}
+%  \tripletFeel 8 \theNotesHarmony
+>>
 
-    \layout {
-      indent = 10
-      ragged-right = ##f
-      ragged-bottom = ##t
-    }
+\layout {
+  indent = 10
+  ragged-right = ##f
+  ragged-bottom = ##t
+}
 
-    \midi {
-      %\applySwing
-      \tempo 4 = 150
-    }
-  }
+\midi {
+  %\applySwing
+  \tempo 4 = 150
+}
+}
 }
 %{
-convert-ly (GNU LilyPond) 2.25.4  convert-ly: Processing `'...
+convert-ly (GNU LilyPond) 2.24.4  convert-ly: Processing `'...
 Applying conversion:     The document has not been changed.
 %}
 
@@ -190,4 +190,12 @@ Applying conversion:     The document has not been changed.
 %{
 convert-ly (GNU LilyPond) 2.25.12  convert-ly: Processing `'...
 Applying conversion: 2.25.5, 2.25.6, 2.25.8, 2.25.9, 2.25.11, 2.25.12
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.25.32  convert-ly: Processing `'...
+Applying conversion: 2.25.0, 2.25.1, 2.25.2, 2.25.3, 2.25.4, 2.25.5,
+2.25.6, 2.25.8, 2.25.9, 2.25.11, 2.25.12, 2.25.13, 2.25.18, 2.25.22,
+2.25.23, 2.25.24, 2.25.25, 2.25.26, 2.25.28, 2.25.30, 2.25.31, 2.25.32
 %}

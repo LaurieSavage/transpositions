@@ -1,4 +1,4 @@
-\version "2.24.3"
+\version "2.25.28"
 % \include "/home/laurie/.local/share/lilypond/includes/lilyjazz.ily"
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
