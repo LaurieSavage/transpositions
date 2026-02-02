@@ -128,7 +128,7 @@ melody = \transpose d a  \relative c'' {
 }
 
 verses = \lyricmode {
-  \override Lyrics.LyricText.font-name = #"LilyJazz Text"
+  \override Lyrics.LyricText.font-name = #"lilyjazz Text"
   Deep __ is the mid -- night sea, __
   Warm __ is the frag -- rant land, __
   Sweet __ are your lips to me, __

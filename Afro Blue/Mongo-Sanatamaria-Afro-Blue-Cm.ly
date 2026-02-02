@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
@@ -14,11 +14,11 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup{\override #'(font-name . "LilyJAZZ Text")"Afro Blue"}
-  composer = \markup{\override #'(font-name . "LilyJAZZ Text")"Mongo Santamaria"}
-  piece = \markup{\override #'(font-name . "LilyJAZZ Text")"Medium fast"}
+  title = \markup{\override #'(font-name . "lilyjazz Text")"Afro Blue"}
+  composer = \markup{\override #'(font-name . "lilyjazz Text")"Mongo Santamaria"}
+  piece = \markup{\override #'(font-name . "lilyjazz Text")"Medium fast"}
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -31,8 +31,8 @@ global = {
 
 chordNamesOrig = \chordmode {
   \global
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   s2.*4
   f2.*2:m7
   des4.:7.9+/aes c4.:7.9+/g
@@ -74,7 +74,7 @@ chordNamesOrig = \chordmode {
 
 melodyOrig = \relative c'' {
   \global
-  \jazzOn
+  
   \repeat volta 2 {\mark"Percussion until ready"} r2.*4 \break
   \repeat volta 2{
     \mark \default
@@ -136,7 +136,7 @@ melody = \transpose f c {\melodyOrig}
 \book {
   \bookOutputSuffix "_TenorSax"
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "Tenor Sax"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "Tenor Sax"}
   }
   \score {
     <<
@@ -150,7 +150,7 @@ melody = \transpose f c {\melodyOrig}
 \book {
   \bookOutputSuffix "_Trumpet"
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "Trumpet"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "Trumpet"}
   }
   \score {
     <<
@@ -163,7 +163,7 @@ melody = \transpose f c {\melodyOrig}
 \book {
   \bookOutputSuffix "_Eflat"
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "E flat Instruments"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "E flat Instruments"}
   }
   \score {
     <<
@@ -177,7 +177,7 @@ melody = \transpose f c {\melodyOrig}
 \book {
   \bookOutputSuffix "_concert"
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "Concert Instruments"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "Concert Instruments"}
   }
   \score {
     <<

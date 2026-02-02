@@ -10,7 +10,7 @@
 %%%  bottom-margin = 10\mm
 %%%  #(define fonts
 %%%     (set-global-fonts
-%%%      #:roman "LilyJAZZ Text"
+%%%      #:roman "lilyjazz Text"
 %%%      #:sans "Nimbus Sans, Nimbus Sans L"
 %%%      #:typewriter "DejaVu Sans Mono"
 %%%      ; unnecessary if the staff size is default
@@ -228,7 +228,7 @@ verse = \lyricmode {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "Concert"
     }
   }
@@ -259,7 +259,7 @@ verse = \lyricmode {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "B flat instrument"
     }
   }

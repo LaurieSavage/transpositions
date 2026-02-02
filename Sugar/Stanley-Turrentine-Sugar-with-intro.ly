@@ -31,8 +31,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  %\override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  %\jazzOn
+  %\override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  %
   \global
   \repeat percent 3{ d2..:m a8:7.9+ | s1}
 
@@ -64,7 +64,7 @@ melody =\relative c' {
   \improvisationOn
   c4 c4 c4 c8 c8~
   \improvisationOff
- % \jazzOn
+ % 
   %\partial 4*4
   r4 r8 d8 f8 g4 a8~
   \repeat volta 2 {

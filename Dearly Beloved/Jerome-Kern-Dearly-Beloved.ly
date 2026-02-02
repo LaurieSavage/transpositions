@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-%\include "AccordsJazzDefs.ily"
-%\include "LilyJAZZ.ily"
+%\include "jazzchords.ily"
+%\include "lilyjazz.ily"
 \include "jazzchords.ily"
 \include "jazzextras.ily"
 \include "lilyjazz.ily"
@@ -13,7 +13,7 @@
   bottom-margin = 10\mm
   %  #(define fonts
   %      (set-global-fonts
-  %       #:roman "LilyJAZZ Text"
+  %       #:roman "lilyjazz Text"
   %       #:sans "Nimbus Sans, Nimbus Sans L"
   %       #:typewriter "DejaVu Sans Mono"
   %       ; unnecessary if the staff size is default

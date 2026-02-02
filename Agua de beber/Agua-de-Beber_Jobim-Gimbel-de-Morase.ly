@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 comp = #(define-music-function (parser location count) ( integer?)
@@ -13,16 +13,16 @@ comp = #(define-music-function (parser location count) ( integer?)
           )
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Agua de Beber"}
-  subtitle = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Bflat chart"}
-  composer = \markup {\override #'(font-name . "LilyJAZZ Text")"Jobim / Gimbel / de Moraes"}
-  meter = \markup{\override #'(font-name . "LilyJAZZ Text")"Medium Bossa"}
-  tagline = \markup{\override #'(font-name . "LilyJAZZ Text")"Paradiso Connection"}
-  copyright = \markup {\override #'(font-name . "LilyJAZZ Text"){"Edited by LS, " \today}}
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Agua de Beber"}
+  subtitle = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Bflat chart"}
+  composer = \markup {\override #'(font-name . "lilyjazz Text")"Jobim / Gimbel / de Moraes"}
+  meter = \markup{\override #'(font-name . "lilyjazz Text")"Medium Bossa"}
+  tagline = \markup{\override #'(font-name . "lilyjazz Text")"Paradiso Connection"}
+  copyright = \markup {\override #'(font-name . "lilyjazz Text"){"Edited by LS, " \today}}
 }
 
 global = {
-  \jazzOn
+  
   \time 4/4
   \key b \minor
   %\tempo 4=100
@@ -32,7 +32,7 @@ global = {
 
 chordNames = \chordmode {
   \global
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
   %Intro
   b1:m7
   cis2:7.9+ fis2:7.5+

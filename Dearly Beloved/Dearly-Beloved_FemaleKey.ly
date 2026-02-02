@@ -13,7 +13,7 @@
   bottom-margin = 10\mm
    #(define fonts
      (set-global-fonts
-      #:roman "LilyJAZZ Text"
+      #:roman "lilyjazz Text"
       #:sans "Nimbus Sans, Nimbus Sans L"
       #:typewriter "DejaVu Sans Mono"
       ; unnecessary if the staff size is default
@@ -102,14 +102,14 @@ realBookTitle = \markup {
   %piece = "Up swing"
   tagline = \markup
   {
-    \override #'(font-name . "LilyJazz Text")
+    \override #'(font-name . "lilyjazz Text")
     {
       "Edited by L.S. " \today
     }
   }
   copyright = \markup
   {
-    \override #'(font-name . "LilyJAZZ Text")
+    \override #'(font-name . "lilyjazz Text")
     {
       "1942"
     }

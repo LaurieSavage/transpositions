@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 \include "articulate.ly"
 
 \paper {
@@ -32,8 +32,8 @@ comp = #(define-music-function (parser location count) ( integer?)
   title = "So What"
   composer = "Miles Davis"
   %piece = "Boogaloo"
-  tagline = \markup{ \small \override #'(font-name . "LilyJAZZ Text"){"(As played by Christian Scott")}}
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  tagline = \markup{ \small \override #'(font-name . "lilyjazz Text"){"(As played by Christian Scott")}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -107,7 +107,7 @@ chordNames = \chordmode {
 
 melody = \relative c {
   \global
-  \jazzOn
+  
   \clef bass
   \revert Score.BarNumber.stencil
   \bassRiffA
@@ -153,7 +153,7 @@ melody = \relative c {
 
 horns = \relative c''{
   \global
-  \jazzOn
+  
   \clef treble
   \revert Score.BarNumber.stencil
   R1
@@ -282,7 +282,7 @@ horns = \relative c''{
     %\midi{}
   }
   \markup{
-    \override #'(font-name . "LilyJAZZ Text")
+    \override #'(font-name . "lilyjazz Text")
     {
       "Solo Structure: A - 16 bars Dm7, B - 8 bars Ebm7, A2 - 8 bars Dm7"
     }
@@ -309,7 +309,7 @@ horns = \relative c''{
     \layoutScore
   }
   \markup{
-    \override #'(font-name . "LilyJAZZ Text")
+    \override #'(font-name . "lilyjazz Text")
     {
       "Solo Structure for horns: A - 16 bars Em7, B - 8 bars Fm7, A2 - 8 bars Em7"
     }

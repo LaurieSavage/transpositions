@@ -1,12 +1,12 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"A-Kah-Hah"}
-  composer = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Lloyd Swanton"}
-  instrument = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"E flat"}
-  tagline = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Standing Tall - 2015"}
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"A-Kah-Hah"}
+  composer = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Lloyd Swanton"}
+  instrument = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"E flat"}
+  tagline = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Standing Tall - 2015"}
 }
 
 % Function to print a specified number of slashes
@@ -27,7 +27,7 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
   %\global
  s1*8
  g1 a:m g f4 fis g2
@@ -47,7 +47,7 @@ melody = \relative c'' {
     \bar ".|:-|"
     \clef bass
     R1^\markup { 
-      \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Bass intro with stick"
+      \fontsize #3 \override #'(font-name . "lilyjazz Text")"Bass intro with stick"
     } 
     R1*3
   }
@@ -102,7 +102,7 @@ melody = \relative c'' {
 }
 
 words = \lyricmode {
-  \jazzOn 
+   
   
   
 }
@@ -111,7 +111,7 @@ words = \lyricmode {
   <<
     \new ChordNames \transpose ees c \chordNames
     %\new FretBoards \chordNames
-    \new Staff \transpose ees c   {\jazzOn \melody }
+    \new Staff \transpose ees c   { \melody }
     %\addlyrics { \words }
   >>
   \layout { }

@@ -7,7 +7,7 @@
 % Melody: Real Book, 5th and 6th editions
 % Chords: Jamie Aebersold
 
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
@@ -22,13 +22,13 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  dedication =\markup{\override #'(font-name . "LilyJAZZ Text") "For Baroness Kathleen Annie Pannonica de Koenigswarter"}
-  title = \markup {\override #'(font-name . "LilyJAZZ Text")"Nica's Dream"}
-  composer = \markup{ \override #'(font-name . "LilyJAZZ Text") "Horace Silver"}
-  piece = \markup {\italic \override #'(font-name . "LilyJAZZ Text"){"Solos AABA - " \box{"A"} " Latin, " \box{"B"} " swing" }}
-  tagline = \markup {\override #'(font-name . "LilyJAZZ Text")"Edited with Lilypond (Lilypond.org)"}
-  copyright = \markup {\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
-  meter = \markup{\override #'(font-name . "LilyJAZZ Text")"Medium tempo"}
+  dedication =\markup{\override #'(font-name . "lilyjazz Text") "For Baroness Kathleen Annie Pannonica de Koenigswarter"}
+  title = \markup {\override #'(font-name . "lilyjazz Text")"Nica's Dream"}
+  composer = \markup{ \override #'(font-name . "lilyjazz Text") "Horace Silver"}
+  piece = \markup {\italic \override #'(font-name . "lilyjazz Text"){"Solos AABA - " \box{"A"} " Latin, " \box{"B"} " swing" }}
+  tagline = \markup {\override #'(font-name . "lilyjazz Text")"Edited with Lilypond (Lilypond.org)"}
+  copyright = \markup {\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
+  meter = \markup{\override #'(font-name . "lilyjazz Text")"Medium tempo"}
 }
 
 global = {
@@ -39,8 +39,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
   % Intro
   %  ees2.:m9 des4:m9
@@ -123,7 +123,7 @@ interludeC = \chordmode {
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
 
   % Intro
@@ -250,7 +250,7 @@ interludeM = \relative c'' {
 \bookpart {
   \header {
     % \override instrument.color = #red
-    instrument = \markup \with-color #red {\override #'(font-name . "LilyJAZZ Text") "Concert Instruments"}
+    instrument = \markup \with-color #red {\override #'(font-name . "lilyjazz Text") "Concert Instruments"}
   }
   \score {
     <<
@@ -260,7 +260,7 @@ interludeM = \relative c'' {
   }
   %   \layout { }
   %  \midi { }
- %  \markup \override #'(box-padding . 1.5) {\box{\column {\override #'(font-name . "LilyJAZZ Text"){
+ %  \markup \override #'(box-padding . 1.5) {\box{\column {\override #'(font-name . "lilyjazz Text"){
 % \bold {"Sources"}
 % "Intro: https://www.learnjazzstandards.com/jazz-standards/nicas-dream/"
 % "Melody: Real Book, 5th and 6th editions"
@@ -282,7 +282,7 @@ interludeM = \relative c'' {
 
 \bookpart {
   \header {
-    instrument = \markup \with-color #red {\override #'(font-name . "LilyJAZZ Text") {"B" \flat " Instruments"}}
+    instrument = \markup \with-color #red {\override #'(font-name . "lilyjazz Text") {"B" \flat " Instruments"}}
   }
   \score {
 
@@ -300,7 +300,7 @@ interludeM = \relative c'' {
 
 \bookpart {
   \header {
-    instrument = \markup \with-color #red {\override #'(font-name . "LilyJAZZ Text"){ "E" \flat " Instruments" }}
+    instrument = \markup \with-color #red {\override #'(font-name . "lilyjazz Text"){ "E" \flat " Instruments" }}
   }
   \score {
     <<
@@ -321,7 +321,7 @@ interludeM = \relative c'' {
 \bookpart {
   \header {
     % \override instrument.color = #red
-    instrument = \markup \with-color #red {\override #'(font-name . "LilyJAZZ Text") "Concert Instruments (G minor vocal)"}
+    instrument = \markup \with-color #red {\override #'(font-name . "lilyjazz Text") "Concert Instruments (G minor vocal)"}
   }
   \score {
     <<
@@ -333,7 +333,7 @@ interludeM = \relative c'' {
 
 \bookpart {
   \header {
-    instrument = \markup \with-color #red {\override #'(font-name . "LilyJAZZ Text") {"B" \flat " Instruments (G minor vocal)"}}
+    instrument = \markup \with-color #red {\override #'(font-name . "lilyjazz Text") {"B" \flat " Instruments (G minor vocal)"}}
   }
   \score {
 
@@ -351,7 +351,7 @@ interludeM = \relative c'' {
 
 \bookpart {
   \header {
-    instrument = \markup \with-color #red {\override #'(font-name . "LilyJAZZ Text"){ "E" \flat " Instruments (G minor vocal)" }}
+    instrument = \markup \with-color #red {\override #'(font-name . "lilyjazz Text"){ "E" \flat " Instruments (G minor vocal)" }}
   }
   \score {
     <<

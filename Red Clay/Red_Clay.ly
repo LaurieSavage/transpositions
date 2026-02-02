@@ -2,7 +2,7 @@
 
 % Taken from the Bflat version in Ed 6 Real Book
 
-today =% \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+today =% \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")
 %#(strftime "%d-%m-%Y" (localtime (current-time))) %}
 #(strftime "%d-%m-%Y" (localtime (current-time)))
 

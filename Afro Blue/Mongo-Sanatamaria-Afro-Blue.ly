@@ -14,11 +14,11 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup{\override #'(font-name . "LilyJAZZ Text")"Afro Blue"}
-  composer = \markup{\override #'(font-name . "LilyJAZZ Text")"Mongo Santamaria"}
-  piece = \markup{\override #'(font-name . "LilyJAZZ Text")"Medium fast"}
+  title = \markup{\override #'(font-name . "lilyjazz Text")"Afro Blue"}
+  composer = \markup{\override #'(font-name . "lilyjazz Text")"Mongo Santamaria"}
+  piece = \markup{\override #'(font-name . "lilyjazz Text")"Medium fast"}
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -32,7 +32,7 @@ global = {
 chordNames = \chordmode {
   \global
   \override ChordNames.ChordName.font-name = #"lilyjazzchord"
-  %\jazzOn
+  %
   s2.*4
   f2.*2:m7
   des4.:7.9+/aes c4.:7.9+/g
@@ -74,7 +74,7 @@ chordNames = \chordmode {
 
 melody = \relative c'' {
   \global
-  \jazzOn
+  
   \repeat volta 2 {\mark"Percussion until ready"} r2.*4 %\break
   \repeat volta 2{
     \mark \default
@@ -132,7 +132,7 @@ melody = \relative c'' {
 
 \bookpart {
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text") \with-color #red  "Concert Instruments"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text") \with-color #red  "Concert Instruments"}
   }
   \score {
     <<
@@ -145,12 +145,12 @@ melody = \relative c'' {
     \midi { }
   }
 
-  \markup{\override #'(font-name . "LilyJAZZ Text")"Open solos over F minor or 3/4 minor blues"}
+  \markup{\override #'(font-name . "lilyjazz Text")"Open solos over F minor or 3/4 minor blues"}
 }
 
 \bookpart {
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "Concert Instruments"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "Concert Instruments"}
   }
   \score {
     <<
@@ -162,12 +162,12 @@ melody = \relative c'' {
     \layout { }
     \midi { }
   }
-  \markup{\override #'(font-name . "LilyJAZZ Text")"Open solos over F minor or 3/4 minor blues"}
+  \markup{\override #'(font-name . "lilyjazz Text")"Open solos over F minor or 3/4 minor blues"}
 }
 
 \bookpart {
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "Concert Instruments"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "Concert Instruments"}
   }
   \score {
     <<
@@ -179,12 +179,12 @@ melody = \relative c'' {
     \layout { }
     \midi { }
   }
-  \markup{\override #'(font-name . "LilyJAZZ Text")"Open solos over F minor or 3/4 minor blues"}
+  \markup{\override #'(font-name . "lilyjazz Text")"Open solos over F minor or 3/4 minor blues"}
 }
 
 \bookpart {
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "B flat Instruments"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "B flat Instruments"}
   }
   \score {
     <<
@@ -196,12 +196,12 @@ melody = \relative c'' {
     \layout { }
     %\midi { }
   }
-  \markup{\override #'(font-name . "LilyJAZZ Text")"Open solos over F minor (concert) or 3/4 minor blues"}
+  \markup{\override #'(font-name . "lilyjazz Text")"Open solos over F minor (concert) or 3/4 minor blues"}
 }
 
 \bookpart {
   \header {
-    instrument = \markup{\override #'(font-name . "LilyJAZZ Text")\with-color #red  "E flat Instruments"}
+    instrument = \markup{\override #'(font-name . "lilyjazz Text")\with-color #red  "E flat Instruments"}
   }
   \score {
     <<
@@ -213,7 +213,7 @@ melody = \relative c'' {
     \layout { }
     %  \midi { }
   }
-  \markup{\override #'(font-name . "LilyJAZZ Text")"Open solos over F minor (concert) or 3/4 minor blues"}
+  \markup{\override #'(font-name . "lilyjazz Text")"Open solos over F minor (concert) or 3/4 minor blues"}
 }
 
 %{

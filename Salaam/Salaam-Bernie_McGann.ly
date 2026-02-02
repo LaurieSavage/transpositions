@@ -68,7 +68,7 @@ global = {
 
 
 chordNames = \chordmode {
-  %\jazzOn
+  %
   s2.
   c2:m a2:7
   d2:m7 g2:7
@@ -86,7 +86,7 @@ chordNames = \chordmode {
 }
 
 melody = \relative c'' {
-  %\jazzOn
+  %
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   %\compressEmptyMeasures
   \global

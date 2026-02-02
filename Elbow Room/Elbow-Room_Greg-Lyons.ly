@@ -79,7 +79,7 @@ global = {
   \tempo 4=84
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \accidentalStyle modern-cautionary
-  %\jazzOn
+  %
 }
 
 chordNames = \chordmode {

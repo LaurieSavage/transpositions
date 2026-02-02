@@ -1,8 +1,8 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-\include "AccordsJazzDefs.ily"
+\include "lilyjazz.ily"
+\include "jazzchords.ily"
 
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 makePercent =
 #(define-music-function (note) (ly:music?)
@@ -42,8 +42,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  %\override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  %\override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
 s1
 e1:m7.5-
@@ -71,7 +71,7 @@ d1*2:m
 }
 
 melody = \relative c' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \partial 4*4 r8 d4. e4 f4
@@ -119,7 +119,7 @@ melody = \relative c' {
     %\midi { }
   }
   \markup{ \box
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
        "Real Book, 6th Edition"
   }
 }
@@ -136,7 +136,7 @@ melody = \relative c' {
     }
   }
   \markup{ \box
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
        "Real Book, 6th Edition"}
 }
 
@@ -152,6 +152,6 @@ melody = \relative c' {
     }
   }
   \markup{ \rounded-box
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
        "Real Book, 6th Edition"}
 }

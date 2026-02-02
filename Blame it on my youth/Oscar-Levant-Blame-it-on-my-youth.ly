@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 
 \paper {
   top-margin = 15\mm
@@ -31,7 +31,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Music - Oscar Levant"
   poet = "Lyrics - Edward Heyman"
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -88,7 +88,7 @@ ees2:maj f:m7
 
 melody = \relative c'' {
   \global
-  \jazzOn
+  
 
   g2\mark \default aes8 bes \tuplet 3/2 { g8 aes bes~ }
   bes4 bes, c ees

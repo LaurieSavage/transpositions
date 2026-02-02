@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+\include "lilyjazz.ily"
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 makePercent =
 #(define-music-function (note) (ly:music?)
@@ -19,10 +19,10 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Passion Dance "}
-  composer =\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "McCoy Tyner"}
-  instrument = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Extended Solo over F7sus4"}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "L. S., " \today }
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Passion Dance "}
+  composer =\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "McCoy Tyner"}
+  instrument = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Extended Solo over F7sus4"}
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "L. S., " \today }
 }
 
 global = {
@@ -32,15 +32,15 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
   f1*9:sus4.7
   bes1*16
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 
@@ -83,7 +83,7 @@ melody = \relative c'' {
   %{
      \header {
     piece = \markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "Concert"
       }}%}
 

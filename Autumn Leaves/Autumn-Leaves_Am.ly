@@ -103,7 +103,7 @@ melody =
   \bookOutputSuffix "C"
   \header {
     instrument =%\markup {
-      %\fontsize #2 \override #(font-name . "LilyJAZZ Text")
+      %\fontsize #2 \override #(font-name . "lilyjazz Text")
       "Concert"
     %}
   }
@@ -121,7 +121,7 @@ melody =
   \bookOutputSuffix "Eb"
   \header {
     instrument =%\markup {
-      %\fontsize #2 \override #(font-name . "LilyJAZZ Text")
+      %\fontsize #2 \override #(font-name . "lilyjazz Text")
       "E flat instrument"
     %}
   }
@@ -138,7 +138,7 @@ melody =
   \bookOutputSuffix "Bb"
   \header {
     instrument = %\markup {
-      %\fontsize #2 \override #(font-name . "LilyJAZZ Text")
+      %\fontsize #2 \override #(font-name . "lilyjazz Text")
       "B flat instrument"
     %}
   }

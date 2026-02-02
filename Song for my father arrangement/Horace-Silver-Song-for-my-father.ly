@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-%\include "AccordsJazzDefs.ily"
-%\include "LilyJAZZ.ily"
+%\include "jazzchords.ily"
+%\include "lilyjazz.ily"
 \include "lilyjazz.ily"
 \include "jazzextras.ily"
 
@@ -33,7 +33,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Horace Silver"
   piece = "Form: AAB"
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -70,7 +70,7 @@ chordNames = \chordmode {
 
 melodyTpt = \relative c'' {
   \global
-  %\jazzOn
+  %
   \revert Score.BarNumber.stencil
   R1*3 \mark \markup { \box "Rhythm vamp until ready"}
   r2 r8 d,8-. g-.  bes-. \break
@@ -102,7 +102,7 @@ melodyTpt = \relative c'' {
 
 melodySax = \relative c'' {
   \global
-  %\jazzOn
+  %
   \revert Score.BarNumber.stencil
   R1*3 \mark \markup { \box "Rhythm vamp until ready"}
   R1

@@ -2,8 +2,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Transposed to A minor for singer
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \include "AccordsJazzDefs.ily"
-% \include "LilyJAZZ.ily"
+% \include "jazzchords.ily"
+% \include "lilyjazz.ily"
 
 \paper {
   top-margin = 15\mm
@@ -114,7 +114,7 @@ chordNamesOrig = \chordmode {
 %% from B flat sheet music
 melodyOrig = \relative c' {
   \global
- % \jazzOn
+ % 
   \override Score.BarNumber.color = #red
   \revert Score.BarNumber.stencil
   \clef bass

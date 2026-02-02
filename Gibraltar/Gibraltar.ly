@@ -4,7 +4,7 @@
 \include "jazzchords.ily.ily"
 \include "jazzextras.ily"
 
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 \paper {
   top-margin = 15\mm
@@ -36,8 +36,8 @@ comp = #(define-music-function (count) ( integer?)
   title = \markup { \underline "Gibraltar" }
   composer ="Freddie Hubbard"
   poet = \markup { \small "Stanley Turrentine - Salt Songs, 1972"}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "Hubtones, 1972"}
-  copyright =  \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "L. S., " \today }
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "Hubtones, 1972"}
+  copyright =  \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "L. S., " \today }
 }
 
 global = {
@@ -110,7 +110,7 @@ chordNames = \chordmode {
 
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
   \repeat percent 3 { s1   \mark  \markup {\box{"Intro"}} s1 }
   s1
@@ -218,8 +218,8 @@ melody = \relative c'' {
 
 SoloChords = \chordmode {
   \global
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   g1:m c1:7
   g1:m c1:7 \break
   g1:m c1:7
@@ -238,7 +238,7 @@ SoloChords = \chordmode {
 
 SoloStructure = {
   \global
-  \jazzOn
+  
   \repeat volta 2 {
     s4 \mark \default s2.
     s1 s1 s1 %\break
@@ -248,9 +248,9 @@ SoloStructure = {
   \mark \default
   s1_"Swing"
   s1 s1
-  \jazzOff
+  
   \improvisationOn b'4-^_"Break" \improvisationOff
-  \jazzOn
+  
   r4 r2 \bar "||" %\break
   \mark \default
   s1_"Latin"
@@ -270,7 +270,7 @@ SoloStructure = {
   \score {
     \header {
       piece  = \markup {
-        \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+        \fontsize #2 \override #'(font-name . "lilyjazz Text")
         "Solos (16 bars Latin, 4 bars swing, 4 bars Latin)"
       }
     }
@@ -285,7 +285,7 @@ SoloStructure = {
 % \bookpart {
 %   \header {
 %     instrument =\markup {
-%       \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+%       \fontsize #2 \override #'(font-name . "lilyjazz Text")
 %       "E flat instrument"
 %     }
 %   }
@@ -310,7 +310,7 @@ SoloStructure = {
   \score {
     \header {
       piece  = \markup {
-        \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+        \fontsize #2 \override #'(font-name . "lilyjazz Text")
         "Solos (16 bars Latin, 4 bars swing, 4 bars Latin)"
       }
     }

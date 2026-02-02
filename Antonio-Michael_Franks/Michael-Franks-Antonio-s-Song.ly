@@ -32,7 +32,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Michael Franks"
   piece = ""
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {

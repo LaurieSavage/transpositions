@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \paper {
   top-margin = 15\mm
@@ -19,7 +19,7 @@ layoutScore = \layout {
   composer = "Michael Franks"
 
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -49,7 +49,7 @@ chordNames = \transpose a g {
 melody = \transpose a g {
   \relative c''{
     \global
-    \jazzOn
+    
     r4 e8 e'~e2
     d4 des c gis
     b2~ b8 a4 e8

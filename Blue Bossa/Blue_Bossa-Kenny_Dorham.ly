@@ -97,7 +97,7 @@ global = {
 }
 
 chordNamesOrig = \chordmode {
-  %\override ChordNames . ChordName #'font-name = #"LilyJazz Text"
+  %\override ChordNames . ChordName #'font-name = #"lilyjazz Text"
 
   \global
   %% A
@@ -260,7 +260,7 @@ melody = \transpose a b { \melodyOrig }
 \book {
   \bookOutputSuffix "Bflat"
   \header {
-    instrument = \markup  {\override #'(font-name . "LilyJAZZ Text")"B flat insts"}
+    instrument = \markup  {\override #'(font-name . "lilyjazz Text")"B flat insts"}
   }
   \score {
     <<

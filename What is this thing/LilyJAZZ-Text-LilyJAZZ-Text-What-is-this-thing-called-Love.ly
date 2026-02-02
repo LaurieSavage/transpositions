@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+\include "lilyjazz.ily"
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 makePercent =
 #(define-music-function (note) (ly:music?)
@@ -19,10 +19,10 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"What is this thing called Love? "}
-  composer =\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") " "}
-  piece = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") ""}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "L. S., " \today }
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"What is this thing called Love? "}
+  composer =\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") " "}
+  piece = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") ""}
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "L. S., " \today }
 }
 
 global = {
@@ -33,8 +33,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
 s4
 g1:m7.5-
@@ -68,7 +68,7 @@ g1:m7.5-
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 \partial 4
@@ -116,7 +116,7 @@ bes4
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "Concert"
     }
   }
@@ -133,7 +133,7 @@ bes4
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "E flat instrument"
     }
   }
@@ -149,7 +149,7 @@ bes4
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "B flat instrument"
     }
   }

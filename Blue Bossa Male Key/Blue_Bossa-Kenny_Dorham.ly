@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-\include "AccordsJazzDefs.ily"
+\include "lilyjazz.ily"
+\include "jazzchords.ily"
 %\include "ignatzek-jazz-chords.ily"
 
 makePercent =
@@ -19,11 +19,11 @@ comp = #(define-music-function (parser location count) ( integer?)
           #}
           )
 
-today = %\markup { \override #'(font-name . "LilyJAZZ Text")
+today = %\markup { \override #'(font-name . "lilyjazz Text")
 #(strftime "%d-%m-%Y" (localtime (current-time))) %}
 
 
-nb = \markup {\override #'(font-name . "LilyJAZZ Text")
+nb = \markup {\override #'(font-name . "lilyjazz Text")
 {\box "Play the head 2x, solo on A: after the solos continue to B"} }
 
 \paper {
@@ -40,7 +40,7 @@ nb = \markup {\override #'(font-name . "LilyJAZZ Text")
   tagline = \markup
   {
     %\fontsize #2
-    \override #'(font-name . "LilyJAZZ Text")
+    \override #'(font-name . "lilyjazz Text")
     { "Edited L. S., " \today }
   }
 }
@@ -53,8 +53,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  %\override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  %\override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
   %% A
   s4
@@ -85,7 +85,7 @@ chordNames = \chordmode {
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \partial 4 g4
@@ -162,7 +162,7 @@ melody = \relative c'' {
 % \bookpart {
 %   \header {
 %     instrument =\markup {
-%       \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+%       \fontsize #2 \override #'(font-name . "lilyjazz Text")
 %       "Concert"
 %     }
 % }

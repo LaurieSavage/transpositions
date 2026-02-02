@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-\include "AccordsJazzDefs.ily"
+\include "lilyjazz.ily"
+\include "jazzchords.ily"
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
@@ -11,7 +11,7 @@ today = #(strftime "%d-%m-%Y" (localtime (current-time)))
   bottom-margin = 10\mm
   #(define fonts
      (set-global-fonts
-      #:roman "LilyJAZZ Text"
+      #:roman "lilyjazz Text"
       #:sans "Nimbus Sans, Nimbus Sans L"
       #:typewriter "DejaVu Sans Mono"
       ; unnecessary if the staff size is default
@@ -34,7 +34,7 @@ global = {
 }
 
 chordNames = \chordmode {
-  \jazzOn
+  
   \global
 s1
 a1*4:m
@@ -49,7 +49,7 @@ e1:7.9+
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
     r4 r8 e, b' c e, c
   \repeat volta 2{    fis2 r8 g a b

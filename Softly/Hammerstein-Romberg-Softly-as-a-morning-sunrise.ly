@@ -4,7 +4,7 @@
 \include "jazzchords.ily"
 \include "jazzextras.ily"
 
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 \paper {
   #(set-paper-size "a4")
@@ -41,8 +41,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  %\override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  %\jazzOn
+  %\override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  %
   \global
   c1:m7
   d2:m7.5- g2:7
@@ -72,7 +72,7 @@ chordNames = \chordmode {
 }
 
 melody = \relative c'' {
-  %\jazzOn
+  %
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \mark \default

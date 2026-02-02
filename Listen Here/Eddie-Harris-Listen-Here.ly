@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
@@ -14,11 +14,11 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup{\override #'(font-name . "LilyJAZZ Text"){\underline "Listen Here"}}
-  composer = \markup{\override #'(font-name . "LilyJAZZ Text") "Eddie Harris"}
-  poet = \markup{\override #'(font-name . "LilyJAZZ Text")"Latin Funk"}
-  piece = \markup{\override #'(font-name . "LilyJAZZ Text")" "}
-  tagline = \markup{\override #'(font-name . "LilyJAZZ Text") {"L.S " \today}}
+  title = \markup{\override #'(font-name . "lilyjazz Text"){\underline "Listen Here"}}
+  composer = \markup{\override #'(font-name . "lilyjazz Text") "Eddie Harris"}
+  poet = \markup{\override #'(font-name . "lilyjazz Text")"Latin Funk"}
+  piece = \markup{\override #'(font-name . "lilyjazz Text")" "}
+  tagline = \markup{\override #'(font-name . "lilyjazz Text") {"L.S " \today}}
 }
 
 global = {
@@ -29,8 +29,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
   bes1:7
   ees1:7
@@ -55,13 +55,13 @@ chordNames = \chordmode {
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
 
   % Intro
   \mark "Intro"
   \repeat percent 2 { \comp 8}
-  \jazzOff
+  
   \new Voice \with {
     \consists "Pitch_squash_engraver"
   } {
@@ -80,7 +80,7 @@ melody = \relative c'' {
     \revert NoteHead.style
     \improvisationOff
   }
-  \jazzOn
+  
   r4 bes8 aes8
 
   % Head

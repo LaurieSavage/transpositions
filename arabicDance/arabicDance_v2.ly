@@ -1,12 +1,12 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+\include "lilyjazz.ily"
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Un-named 'Arabic' Dance"}
-  composer =\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Traditional/Klezmer"}
-    piece = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Play twice, solos, then twice out"}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "Edited Laurie Savage, " \today }
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Un-named 'Arabic' Dance"}
+  composer =\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Traditional/Klezmer"}
+    piece = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Play twice, solos, then twice out"}
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "Edited Laurie Savage, " \today }
 }
 
 Sax = {
@@ -16,7 +16,7 @@ Sax = {
     \time 4/4
     \set Score.skipBars = ##t
     \override MultiMeasureRest.expand-limit = 1
-    \jazzOn
+    
     \partial 4 e4
     gis8 a b4 b b c2. b8 a gis a b4 c8 (b) a b a (gis4.) r4 e
     gis8 a b4 b b d2 ~d8 c b a gis a b4 c8 (b) a b a (gis4.) r2
@@ -44,15 +44,15 @@ Sax = {
 
 ScaleTones = {
   \relative c'{
-    \jazzOn
+    
       \key c \major
       e1 f gis a b c d e
     }
 }
 
 jazzChords =  \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \partial 4 s4 
   e1 a1:m e2 f2 e1
   e1 d1:min e2 f2 f1
@@ -103,7 +103,7 @@ jazzChords =  \chordmode {
     \transpose bes c' \ScaleTones
   >>
   \header {
-       piece = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Ahava Raba Scale"}
+       piece = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Ahava Raba Scale"}
     }
 }
 

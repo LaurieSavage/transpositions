@@ -84,7 +84,7 @@ performanceNote = \markup {
 }
 
 chordNames = \chordmode {
-  %\jazzOn
+  %
   \global
   \partial 4*4  s4*4
   %ees2:min7/aes aes:7
@@ -100,7 +100,7 @@ chordNames = \chordmode {
 }
 
 melody =\relative c' {
-  %\jazzOn
+  %
   \global
   \mark \markup { Bass intro untile horns come in }
   \partial 4*4 r4 r8 d8 f8 g4 a8~

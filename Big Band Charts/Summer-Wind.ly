@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 makePercent =
 #(define-music-function (note) (ly:music?)
@@ -42,7 +42,7 @@ layoutScore = \layout {
   composer = \markup { \huge \box \italic "457B"}
   piece = "Vocal"
   instrument = "1st Tenor Sax"
-  tagline = \markup \override #'( font-name . "LilyJAZZ Text" ){"Port Phillip Show Band, LS 2021"}
+  tagline = \markup \override #'( font-name . "lilyjazz Text" ){"Port Phillip Show Band, LS 2021"}
 }
 
 global = {
@@ -55,7 +55,7 @@ global = {
 }
 
 melody = \relative c' {
-  \jazzOn
+  
   \global
   \revert Score.BarNumber.stencil
 

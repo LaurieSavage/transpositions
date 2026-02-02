@@ -118,7 +118,7 @@ melody = \relative c'' {
     \new ChordNames \chordNames
     %\new FretBoards \chordNames
     \new Staff {
-      %\jazzOn
+      %
       \melody
     }
     %\addlyrics { \words }

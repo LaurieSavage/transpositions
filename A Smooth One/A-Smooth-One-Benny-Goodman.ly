@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "LilyJAZZ.ily"
-\include "AccordsJazzDefs.ily"
+\include "lilyjazz.ily"
+\include "jazzchords.ily"
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
@@ -37,7 +37,7 @@ layoutScore = \layout {
 global = {
   \time 4/4
   \key f \major
-  \tweak X-offset #-8 \mark \jazzTempoMarkup #"Medium Swing" c4 #"140"
+%  \tweak X-offset #-8 \mark \jazzTempoMarkup #"Medium Swing" c4 #"140"
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \compressEmptyMeasures
   \override MultiMeasureRest.expand-limit = #3
@@ -78,7 +78,7 @@ b2:dim7 bes2:6
 
 melody = \relative c'' {
   \global
-  \jazzOn
+  
   \repeat volta 2 {
     d8 \mark \default aes4. f8 g f d
     f8 a4. r2
@@ -113,7 +113,7 @@ melody = \relative c'' {
 
 
 \book {
-  \bookOutputSuffix "C"
+  %\bookOutputSuffix "C"
   \score {
     <<
       \new ChordNames \chordNames

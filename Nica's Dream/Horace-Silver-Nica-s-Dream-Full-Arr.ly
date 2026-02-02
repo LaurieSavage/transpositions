@@ -7,8 +7,8 @@
 % Melody: Real Book, 5th and 6th editions
 % Chords: Jamie Aebersold
 %{
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 %}
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))
@@ -128,7 +128,7 @@ melody =
   \relative c''
   {
     \global
-    %\jazzOn
+    %
 
     % Intro
 

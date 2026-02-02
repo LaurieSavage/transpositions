@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 \include "swing.ly"
 
 \paper {
@@ -9,10 +9,10 @@
   left-margin = 10\mm
   right-margin = 10\mm
   bottom-margin = 10\mm
-  %\override  #'(font-name . "LilyJAZZ Text")
+  %\override  #'(font-name . "lilyjazz Text")
   #(define fonts
      (set-global-fonts
-      #:roman "LilyJAZZ Text"
+      #:roman "lilyjazz Text"
       #:sans "Nimbus Sans, Nimbus Sans L"
       #:typewriter "DejaVu Sans Mono"
       ; unnecessary if the staff size is default
@@ -58,7 +58,7 @@ global = {
 
 
 VerseOne = \lyricmode {
-  \override Lyrics.LyricText.font-name = #"LilyJazz Text"
+  \override Lyrics.LyricText.font-name = #"lilyjazz Text"
   I'm hip, I'm no square
   I'm a -- lert, I'm a -- wake, I'm a -- ware
   I am al -- ways on the scene
@@ -67,7 +67,7 @@ VerseOne = \lyricmode {
 }
 
 VerseTwo = \lyricmode {
-  \override Lyrics.LyricText.font-name = #"LilyJazz Text"
+  \override Lyrics.LyricText.font-name = #"lilyjazz Text"
   _ dig, I'm in step
   When it was hip to be hep, I was hep
   I don't blow but I'm a fan
@@ -91,13 +91,13 @@ VerseTwo = \lyricmode {
 
 
 VerseThree = \markup {
-  \column \fontsize #4 \override#'(font-name . "LilyJAZZ Text")
+  \column \fontsize #4 \override#'(font-name . "lilyjazz Text")
   {
     \line { \vspace #2 \hspace #4 "Verses 3/4  "}
   }
   \vspace #4
   \hspace #10
-  \column \fontsize #2 \override#'(font-name . "LilyJAZZ Text")
+  \column \fontsize #2 \override#'(font-name . "lilyjazz Text")
   {
     \vspace #2
     \line { I'm hip, I'm alive }
@@ -185,7 +185,7 @@ chordNames = \chordmode {
 
 melody = \relative c'' {
   \global
-  \jazzOn
+  
   \revert Score.BarNumber.stencil
   \partial 4
   des4

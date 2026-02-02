@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 \include "articulate.ly"
 
 \paper {
@@ -11,7 +11,7 @@
   bottom-margin = 10\mm
   #(define fonts
      (set-global-fonts
-      #:roman "LilyJAZZ Text"
+      #:roman "lilyjazz Text"
       #:sans "Nimbus Sans, Nimbus Sans L"
       #:typewriter "DejaVu Sans Mono"
       ; unnecessary if the staff size is default
@@ -40,7 +40,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Pee Wee Ellis"
   piece = ""
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -80,7 +80,7 @@ chordNames = \chordmode {
 
 melody = \relative c'' {
   \global
-  \jazzOn
+  
   \revert Score.BarNumber.stencil
 
   R1*3^"Rhythm Intro"

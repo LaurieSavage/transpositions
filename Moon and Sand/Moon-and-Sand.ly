@@ -18,8 +18,8 @@ global = {
 
 chordNames = \chordmode {
   \global
-  %   \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  %  \jazzOn
+  %   \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  %  
   d1:m
   bes1:maj7
   aes1:maj7
@@ -64,7 +64,7 @@ chordNames = \chordmode {
 
 melody = \relative c'' {
   \global
-  %  \jazzOn
+  %  
   \sectionLabel \markup { \bold \large "Verse" }
   a1~
   a4 g8 f g4 e
@@ -113,7 +113,7 @@ melody = \relative c'' {
 }
 
 verses = \lyricmode {
-  %\override Lyrics.LyricText.font-name = #"LilyJazz Text"
+  %\override Lyrics.LyricText.font-name = #"lilyjazz Text"
   Deep__ is the mid -- night sea,__
   Warm__ is the frag -- rant land,__
   Sweet__ are your lips to me,__
@@ -159,7 +159,7 @@ femMelody = \transpose g d \melody
 %{
 \bookpart {
   \header {
-    instrument = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+    instrument = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")
                             {"B" \flat " Instruments"}
     }
   }
@@ -176,7 +176,7 @@ femMelody = \transpose g d \melody
 
 \bookpart {
   \header {
-    instrument = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+    instrument = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")
                            {"E" \flat " Instruments"}
     }
   }

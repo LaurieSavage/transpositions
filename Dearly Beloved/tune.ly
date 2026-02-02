@@ -1,6 +1,6 @@
 melody = \relative c'' {
   %\global
-  %\jazzOn
+  %
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \time 4/4
   \key c \major

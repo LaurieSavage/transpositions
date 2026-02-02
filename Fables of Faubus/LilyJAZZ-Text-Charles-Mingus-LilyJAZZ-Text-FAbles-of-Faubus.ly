@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 makePercent =
 #(define-music-function (note) (ly:music?)
@@ -18,13 +18,13 @@ comp = #(define-music-function (count) ( integer?)
           #}
           )
 
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")" FAbles of Faubus"}
-  composer =\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Charles Mingus "}
-  piece = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") ""}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "LS, " \today }
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")" FAbles of Faubus"}
+  composer =\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Charles Mingus "}
+  piece = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") ""}
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "LS, " \today }
 }
 
 global = {
@@ -35,14 +35,14 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
 
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 
@@ -52,7 +52,7 @@ melody = \relative c'' {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "Concert"
     }
   }
@@ -69,7 +69,7 @@ melody = \relative c'' {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "E flat instrument"
     }
   }
@@ -85,7 +85,7 @@ melody = \relative c'' {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "B flat instrument"
     }
   }

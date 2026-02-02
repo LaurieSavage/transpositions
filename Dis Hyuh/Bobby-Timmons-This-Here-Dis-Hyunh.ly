@@ -1,8 +1,8 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 today = \markup {
-  \override #'(font-name . "LilyJAZZ Text"){
+  \override #'(font-name . "lilyjazz Text"){
     #(strftime "%d-%m-%Y" (localtime (current-time)))
   }
 }
@@ -18,9 +18,9 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup {\override #'(font-name . "LilyJAZZ Text") "This Here/Dis Hyunh"}
-  composer = \markup {\override #'(font-name . "LilyJAZZ Text")"Bobby Timmons"}
-  tagline = \markup { \override #'(font-name . "LilyJAZZ Text") "Edited - L.S. - " {\today}}
+  title = \markup {\override #'(font-name . "lilyjazz Text") "This Here/Dis Hyunh"}
+  composer = \markup {\override #'(font-name . "lilyjazz Text")"Bobby Timmons"}
+  tagline = \markup { \override #'(font-name . "lilyjazz Text") "Edited - L.S. - " {\today}}
 }
 
 global = {
@@ -28,12 +28,12 @@ global = {
   %\key c \major
   %\tempo 4=100
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
-  \jazzOn
+  
 }
 
 chordNames = \chordmode {
   \global
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
   s2.
   s2.
   f2.*8:7
@@ -162,7 +162,7 @@ melodyHorns = \relative c'' {
 
 \bookpart {
   \header {
-    instrument = \markup { \override #'(font-name . "LilyJAZZ Text") { \with-color #red   "Concert Instruments"}}
+    instrument = \markup { \override #'(font-name . "lilyjazz Text") { \with-color #red   "Concert Instruments"}}
   }
   \score {
     <<

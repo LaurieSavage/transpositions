@@ -85,8 +85,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  % \override ChordNames . ChordName #'font-name = #"LilyJazz Text"
-  %\jazzOn
+  % \override ChordNames . ChordName #'font-name = #"lilyjazz Text"
+  %
   \global
   s4
   bes1*4:min
@@ -98,7 +98,7 @@ chordNames = \chordmode {
 }
 
 melody = \relative c'' {
-  %\jazzOn
+  %
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \partial 4

@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 
 \paper {
   top-margin = 15\mm
@@ -14,7 +14,7 @@
   piece = \markup { \small "Kind of Blue: CBS 40579"}
   subtitle = \markup {\with-color #red "John Coltrane solo, first chorus"}
   subsubtitle = "Transposed for flute"
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){ "John Coltrane Omnibook - Hal Leonard Publishing"}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){ "John Coltrane Omnibook - Hal Leonard Publishing"}}
   tagline = ""
 }
 
@@ -39,7 +39,7 @@ chordNames = \chordmode {
 
 melody = \relative c' {
   \global
-  \jazzOn
+  
 
   \time 3/4
   R2.*7

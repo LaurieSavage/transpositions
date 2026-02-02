@@ -7,7 +7,7 @@
 % Melody: Real Book, 5th and 6th editions
 % Chords: Jamie Aebersold
 
-%\include "AccordsJazzDefs.ily"
+%\include "jazzchords.ily"
 %\include "jazzchords.ily"
 \include "lilyjazz.ily"
 \include "jazzextras.ily"

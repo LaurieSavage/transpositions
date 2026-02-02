@@ -99,7 +99,7 @@ global = {
 }
 
 chordNames = \chordmode {
-  %\override ChordNames . ChordName #'font-name = #"LilyJazz Text"
+  %\override ChordNames . ChordName #'font-name = #"lilyjazz Text"
   \global
   s1
   e1:m7.5-

@@ -12,7 +12,7 @@ today = #(strftime "%d-%m-%Y" (localtime (current-time)))
 %   bottom-margin = 10\mm
 %   #(define fonts
 %      (set-global-fonts
-%       #:roman "LilyJAZZ Text"
+%       #:roman "lilyjazz Text"
 %       #:sans "Nimbus Sans, Nimbus Sans L"
 %       #:typewriter "DejaVu Sans Mono"
 %       ; unnecessary if the staff size is default

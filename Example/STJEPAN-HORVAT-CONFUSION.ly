@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
+\include "jazzchords.ily"
 \include "deutsch.ly"
 \include "swing.ly"
 

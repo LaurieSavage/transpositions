@@ -1,11 +1,11 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Chelsea Bridge"}
-  composer =\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Billy Strayhorn"}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "Edited Laurie Savage, 27/6/2016" }
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Chelsea Bridge"}
+  composer =\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Billy Strayhorn"}
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "Edited Laurie Savage, 27/6/2016" }
 }
 
 global = {
@@ -14,8 +14,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
 s1
 ees1:7 des:7 ees2:7 des:7 bes1:7
@@ -33,7 +33,7 @@ ees:m7 aes:7 des:6
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
 \key des \major
 % Unaccompanied Intro
@@ -78,7 +78,7 @@ a2. bes4
 
 \bookpart {
   \header {piece =\markup { 
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text") 
+    \fontsize #2 \override #'(font-name . "lilyjazz Text") 
     "Concert instrument"}}
   \score {
     <<
@@ -92,7 +92,7 @@ a2. bes4
 
 \bookpart {
   \header {piece =\markup { 
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text") 
+    \fontsize #2 \override #'(font-name . "lilyjazz Text") 
     "E flat instrument"}}
   \score {
     <<
@@ -105,7 +105,7 @@ a2. bes4
 
 \bookpart {
   \header {piece =\markup { 
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text") 
+    \fontsize #2 \override #'(font-name . "lilyjazz Text") 
     "B flat instrument"}}
   \score {
     <<

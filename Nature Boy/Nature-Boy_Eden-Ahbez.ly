@@ -35,7 +35,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Eden Ahbez"
   %piece = "Rubato con moto"
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 %}
 

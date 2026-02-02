@@ -1,6 +1,6 @@
 \version "2.24.4"
-%\include "LilyJAZZ.ily"
-today = %\markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+%\include "lilyjazz.ily"
+today = %\markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")
 #(strftime "%d-%m-%Y" (localtime (current-time)))
 %}
 
@@ -21,17 +21,17 @@ comp = #(define-music-function (parser location count) ( integer?)
           )
 
 \header {
-  title = %\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  title = %\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")
   "Harlem Nocturne"
   %}
   subtitle = "(Transposed to D minor)"
-  composer = %\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  composer = %\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")
   "Dick Rogers & Earle Hagen "
   %}
-  piece = %\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  piece = %\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")
   ""
   %}
-  tagline = %\markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+  tagline = %\markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")
   "L. S., " %\markup { \today }
 }
 
@@ -45,8 +45,8 @@ global = {
 
 chordNames = \transpose g d {
   \chordmode {
-   % \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-    % \jazzOn
+   % \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+    % 
     \global
     s2..
     g1*2:m7+
@@ -89,7 +89,7 @@ chordNames = \transpose g d {
 
 melody = \transpose g d' {
   \relative c'' {
-    %\jazzOn
+    %
     \global
     \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
     \partial 2..

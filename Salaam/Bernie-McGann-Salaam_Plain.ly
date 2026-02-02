@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+\include "lilyjazz.ily"
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 
 makePercent =
@@ -36,8 +36,8 @@ global = {
 
 
 chordNames = \chordmode {
-  % \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  % \jazzOn
+  % \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  % 
   %\global
   s1
   c1*4:m
@@ -62,7 +62,7 @@ chordNames = \chordmode {
 
 % This is the transposed tenor part written for Bb sax
 besmelody = \relative c'' {
-  % \jazzOn
+  % 
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \compressEmptyMeasures
   \global
@@ -105,7 +105,7 @@ comping = \relative c'' {
 %\bookpart {
 %{ \header {
     piece =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "Concert"
 %}
 

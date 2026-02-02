@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+\include "lilyjazz.ily"
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 makePercent =
 #(define-music-function (note) (ly:music?)
@@ -19,10 +19,10 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Beautiful Love "}
-  composer =\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Victor Young"}
-  piece = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Swing"}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "L. S., " \today }
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Beautiful Love "}
+  composer =\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Victor Young"}
+  piece = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Swing"}
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "L. S., " \today }
 }
 
 global = {
@@ -34,8 +34,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
   s1
   e1:m7.5-
@@ -63,7 +63,7 @@ chordNames = \chordmode {
 }
 
 melody = \relative c' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \partial 4*4 r8 d4. e4 f4
@@ -130,7 +130,7 @@ verses = \lyricmode {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "Concert"
     }
   }
@@ -143,14 +143,14 @@ verses = \lyricmode {
     \midi { }
   }
   \markup{
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    \fontsize #2 \override #'(font-name . "lilyjazz Text")
     "Real Book, 6th Edition"}
 }
 
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "E flat instrument"
     }
   }
@@ -162,14 +162,14 @@ verses = \lyricmode {
 
   }
   \markup{
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    \fontsize #2 \override #'(font-name . "lilyjazz Text")
     "Real Book, 6th Edition"}
 }
 
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "B flat instrument"
     }
   }
@@ -181,6 +181,6 @@ verses = \lyricmode {
 
   }
   \markup{
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    \fontsize #2 \override #'(font-name . "lilyjazz Text")
     "Real Book, 6th Edition"}
 }

@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+\include "lilyjazz.ily"
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 makePercent =
 #(define-music-function (note) (ly:music?)
@@ -19,10 +19,10 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")"Rio de Janiero Blue"}
-  composer =\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Torrance/Henry "}
-  piece = \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") "Moderately bright"}
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") {"L. S., " \today} }
+  title = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")"Rio de Janiero Blue"}
+  composer =\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Torrance/Henry "}
+  piece = \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") "Moderately bright"}
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") {"L. S., " \today} }
 }
 
 global = {
@@ -34,8 +34,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  \jazzOn
+  \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  
   \global
   a2:m7 d2:/e
   a2:m7 d2:/e
@@ -98,7 +98,7 @@ chordNames = \chordmode {
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \mark \markup { \box "Intro"}
@@ -135,7 +135,7 @@ melody = \relative c'' {
     ( d8 c a2.)
     R1
     <>\coda
-    % \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")"To Coda" }
+    % \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")"To Coda" }
     \bar "||"
 
     R1
@@ -163,7 +163,7 @@ melody = \relative c'' {
       R1
     }
     {
-      \mark  \markup {  \override #'(font-name . "LilyJAZZ Text")"D.S al coda"}
+      \mark  \markup {  \override #'(font-name . "lilyjazz Text")"D.S al coda"}
       R1 \break
     }
   }
@@ -186,7 +186,7 @@ melody = \relative c'' {
 }
 
 verseOne = \lyricmode {
-  \override Lyrics.LyricText.font-name = #"LilyJazz Text"
+  \override Lyrics.LyricText.font-name = #"lilyjazz Text"
 
   The clouds came a -- creep -- in' and you got me weep -- in' this morn -- ing
   I can't be -- lieve__  you're real -- ly gon -- na leave__ this town__
@@ -209,7 +209,7 @@ verseOne = \lyricmode {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text") \with-color #red
+      \fontsize #2 \override #'(font-name . "lilyjazz Text") \with-color #red
       "Concert"
     }
   }
@@ -227,7 +227,7 @@ verseOne = \lyricmode {
 %  \bookpart {
 %   \header {
 %     instrument =\markup {
-%       \fontsize #2 \override #'(font-name . "LilyJAZZ Text") \with-color #red
+%       \fontsize #2 \override #'(font-name . "lilyjazz Text") \with-color #red
 %       "E flat instrument"
 %     }
 %   }
@@ -243,7 +243,7 @@ verseOne = \lyricmode {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text") \with-color #red
+      \fontsize #2 \override #'(font-name . "lilyjazz Text") \with-color #red
       "B flat instrument"
     }
   }

@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 \include "jazzextras.ily"
 
 \paper {
@@ -12,7 +12,7 @@
   bottom-margin = 10\mm
   #(define fonts
      (set-global-fonts
-      #:roman "LilyJAZZ Text"
+      #:roman "lilyjazz Text"
       #:sans "Nimbus Sans, Nimbus Sans L"
       #:typewriter "DejaVu Sans Mono"
       ; unnecessary if the staff size is default
@@ -41,7 +41,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Miles Davis"
   piece = "Medium Blues"
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -71,7 +71,7 @@ chordNames = \chordmode {
 
 melody = \relative c'' {
   \global
-  \jazzOn
+  
   \revert Score.BarNumber.stencil
   \showStartRepeatBar \bar "[|:-|"
   \repeat volta 2 {
@@ -116,7 +116,7 @@ melody = \relative c'' {
     >>
     \layoutScore
   }
-  \markup {\box \override #'(font-name . "LilyJAZZ Text") "Play the 4 bar vamp between solos"}
+  \markup {\box \override #'(font-name . "lilyjazz Text") "Play the 4 bar vamp between solos"}
 }
 
 \book {
@@ -139,5 +139,5 @@ melody = \relative c'' {
     >>
     \layoutScore
   }
-  \markup {\box \override #'(font-name . "LilyJAZZ Text") "Play the 4 bar vamp between solos"}
+  \markup {\box \override #'(font-name . "lilyjazz Text") "Play the 4 bar vamp between solos"}
 }

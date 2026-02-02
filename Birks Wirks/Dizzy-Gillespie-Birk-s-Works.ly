@@ -75,7 +75,7 @@ realBookTitle = \markup {
   composer = "Dizzy Gillespie"
   %piece = ""
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 %}
 
@@ -107,7 +107,7 @@ chordNames = \chordmode {
 
 melody = \relative c' {
   \global
-  %\jazzOn
+  %
   \partial 4.
   f8 aes bes
   \repeat volta 2 {\bar "[|:"

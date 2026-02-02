@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-%\include "LilyJAZZ.ily"
-%\include "AccordsJazzDefs.ily"
+%\include "lilyjazz.ily"
+%\include "jazzchords.ily"
 \include "lilyjazz.ily"
 \include "jazzchords.ily"
 \include "jazzextras.ily"
@@ -26,7 +26,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   bottom-margin = 10\mm
   % #(define fonts
   %      (set-global-fonts
-  %       #:roman "LilyJAZZ Text"
+  %       #:roman "lilyjazz Text"
   %       #:sans "Nimbus Sans, Nimbus Sans L"
   %       #:typewriter "DejaVu Sans Mono"
   %       ; unnecessary if the staff size is default
@@ -200,7 +200,7 @@ chordsOutro = \transpose g ees {
 Intro = \transpose g ees' {
   \relative c'' {
     \global
-    %\jazzOn
+    %
     \revert Score.BarNumber.stencil
     % Introduction
     \section

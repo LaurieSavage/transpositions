@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 
 \paper {
   top-margin = 15\mm
@@ -32,7 +32,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Anthony Newley, Leslie Bricusse"
   %piece = "Ballad"
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -94,7 +94,7 @@ chordNamesE = \chordmode {
 
 melodyE = \relative c'' {
   \global
-  \jazzOn
+  
   \revert Score.BarNumber.stencil
   \partial 2
   b,4 d

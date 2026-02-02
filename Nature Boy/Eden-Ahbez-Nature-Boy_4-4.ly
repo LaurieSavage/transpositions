@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 
 \paper {
   top-margin = 15\mm
@@ -31,7 +31,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Eden Ahbez"
   %piece = "Rubato con moto"
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -84,7 +84,7 @@ d1:m
 
 melody = \relative c''{
   \global
-  \jazzOn
+  
   \revert Score.BarNumber.stencil
    R1*7^\markup{"Rhythm intro"}  r2 r4 r8 a,8 \break
   \repeat volta 2{

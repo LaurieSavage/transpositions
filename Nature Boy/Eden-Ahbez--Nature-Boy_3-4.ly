@@ -1,8 +1,8 @@
 \version "2.24.4"
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 
-today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
+today = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 \paper {
   top-margin = 15\mm
@@ -19,7 +19,7 @@ layoutScore = \layout {
   title = "Nature Boy"
   composer ="eden ahbez"
     piece = "Slow"
-  tagline = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text") "Edited Laurie Savage, " \today }
+  tagline = \markup { \fontsize #2 \override #'(font-name . "lilyjazz Text") "Edited Laurie Savage, " \today }
 }
 
 global = {
@@ -53,7 +53,7 @@ e2.*2:m
 }
 
 melody = \relative c'' {
-  \jazzOn
+  
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \partial 8 b,8 \bar "||"
@@ -99,7 +99,7 @@ melody = \relative c'' {
 
 \bookpart {
   \header {instrument =\markup {
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    \fontsize #2 \override #'(font-name . "lilyjazz Text")
     "Concert"}}
   \score {
     <<
@@ -112,7 +112,7 @@ melody = \relative c'' {
 
 \bookpart {
   \header {instrument =\markup {
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    \fontsize #2 \override #'(font-name . "lilyjazz Text")
     "E flat instrument"}}
   \score {
     <<
@@ -125,7 +125,7 @@ melody = \relative c'' {
 
 \bookpart {
   \header {instrument =\markup {
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    \fontsize #2 \override #'(font-name . "lilyjazz Text")
     "B flat instrument"}}
   \score {
     <<

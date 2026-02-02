@@ -1,8 +1,8 @@
 \version "2.24.4"
-\include "LilyJAZZ.ily"
+\include "lilyjazz.ily"
 \include "rhythmSection.ly"
 \include "horns.ly"
-today = %\markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+today = %\markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")
 #(strftime "%d-%m-%Y" (localtime (current-time)))
 %}
 
@@ -23,12 +23,12 @@ comp = #(define-music-function (count) ( integer?)
           )
 
 \header {
-  title =% \markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  title =% \markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")
   "Gaviota "%}
-  composer = %\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  composer = %\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text")
   "Clare Fischer"%}
-  %piece = %\markup { \fontsize #3 \override #'(font-name . "LilyJAZZ Text") ""}
-  tagline = %\markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+  %piece = %\markup { \fontsize #3 \override #'(font-name . "lilyjazz Text") ""}
+  tagline = %\markup { \fontsize #2 \override #'(font-name . "lilyjazz Text")
   "L. S., " \today %}
 }
 
@@ -37,12 +37,12 @@ global = {
   \key c \minor
   \tempo "medium latin"
   % \accidentalStyle modern-cautionary
-  %\jazzOn
+  %
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 }
 
 chordNames = \chordmode {
-  % \override ChordNames.ChordName.font-name = #"LilyJazz Text"
+  % \override ChordNames.ChordName.font-name = #"lilyjazz Text"
 
   \global
 
@@ -153,7 +153,7 @@ gaviota =  {
 
 
 % introHorns = horns \relative c'' {
-%   \jazzOn
+%   
 %   \global
 %   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 %   \repeat percent 8 {R1} \bar "||"
@@ -164,7 +164,7 @@ gaviota =  {
 \bookpart {
   \header {
     instrument =%\markup {
-    % \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    % \fontsize #2 \override #'(font-name . "lilyjazz Text")
     "Concert"
     % }
   }
@@ -183,7 +183,7 @@ gaviota =  {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "E flat instrument"
     }
   }
@@ -199,7 +199,7 @@ gaviota =  {
 \bookpart {
   \header {
     instrument =\markup {
-      \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      \fontsize #2 \override #'(font-name . "lilyjazz Text")
       "B flat instrument"
     }
   }

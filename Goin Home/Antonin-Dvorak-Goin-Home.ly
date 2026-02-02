@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\include "AccordsJazzDefs.ily"
-\include "LilyJAZZ.ily"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
 
 \paper {
   top-margin = 15\mm
@@ -31,7 +31,7 @@ comp = #(define-music-function (parser location count) ( integer?)
   composer = "Antonin Dvorak"
   %piece = "Andante sostenuto"
   tagline = ""
-  copyright = \markup{\override #'(font-name . "LilyJAZZ Text"){"Edited L.S. " \today}}
+  copyright = \markup{\override #'(font-name . "lilyjazz Text"){"Edited L.S. " \today}}
 }
 
 global = {
@@ -50,7 +50,7 @@ chordNames = \chordmode {
 
 melody = \relative c'' {
   \global
-  \jazzOn
+  
   \revert Score.BarNumber.stencil
   d2^"Andante sostenuto" (ees2)
   d2 (ees2)

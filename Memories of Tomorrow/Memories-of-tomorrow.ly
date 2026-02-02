@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-%\include "AccordsJazzDefs.ily"
-%\include "LilyJAZZ.ily"
+%\include "jazzchords.ily"
+%\include "lilyjazz.ily"
 \include "lilyjazz.ily"
 \include "jazzchords.ily"
 \include "jazzextras.ily"
@@ -17,7 +17,7 @@ layoutScore = \layout {
   indent = 15\mm
 }
 
-today = \markup { %\fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+today = \markup { %\fontsize #2 \override #'(font-name . "lilyjazz Text")
   #(strftime "%d-%m-%Y" (localtime (current-time))) }
 
 makePercent =
@@ -37,14 +37,14 @@ comp = #(define-music-function (parser location count) ( integer?)
           )
 
 \header {
-  title = \markup { %\fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  title = \markup { %\fontsize #3 \override #'(font-name . "lilyjazz Text")
     \smallCaps "Memories of tomorrow "}
-  composer =\markup { %\fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  composer =\markup { %\fontsize #3 \override #'(font-name . "lilyjazz Text")
     "Keith Jarrett "}
-  piece = \markup { %\fontsize #3 \override #'(font-name . "LilyJAZZ Text")
+  piece = \markup { %\fontsize #3 \override #'(font-name . "lilyjazz Text")
     "Latin"}
   tagline = \markup {
-    \fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+    \fontsize #2 \override #'(font-name . "lilyjazz Text")
     {
     "L. S. " \today
     }
@@ -59,8 +59,8 @@ global = {
 }
 
 chordNames = \chordmode {
-  % \override ChordNames.ChordName.font-name = #"LilyJazz Text"
-  %\jazzOn
+  % \override ChordNames.ChordName.font-name = #"lilyjazz Text"
+  %
   \global
   a1:m
   a1:m7+
@@ -98,7 +98,7 @@ chordNames = \chordmode {
 }
 
 melody = \relative c'' {
-  %\jazzOn
+  %
   \global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   c4 b8 a~ a g4 e8~
@@ -135,7 +135,7 @@ melody = \relative c'' {
 
 guideTones = \relative c'' {
   \global
-  %\jazzOn
+  %
 
   a1^"Dorian"
   gis^"Melodic minor"
@@ -187,7 +187,7 @@ guideTones = \relative c'' {
 %{
   \header {
     instrument =%\markup {
-      %\fontsize #2 \override #'(font-name . "LilyJAZZ Text")
+      %\fontsize #2 \override #'(font-name . "lilyjazz Text")
       "E flat instrument"
   }
 %}

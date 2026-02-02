@@ -380,7 +380,7 @@ melodyTwo =
   \relative c''
   {
     \global
-    %\jazzOn
+    %
 
     % Intro
 

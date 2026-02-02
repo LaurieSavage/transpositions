@@ -7,7 +7,7 @@
 }
 
 \relative c'' {
-  %\jazzOn
+  %
   %\global
   \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
   \partial 8
