@@ -1,4 +1,4 @@
-\version "2.25.29"
+\version "2.24.4"
 \include "lilyjazz.ily"
 
 \header {

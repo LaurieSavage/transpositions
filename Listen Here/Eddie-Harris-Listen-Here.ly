@@ -1,4 +1,4 @@
-\version "2.25.28"
+\version "2.24.4"
 \include "LilyJAZZ.ily"
 
 today = #(strftime "%d-%m-%Y" (localtime (current-time)))

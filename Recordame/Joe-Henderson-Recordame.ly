@@ -1,4 +1,4 @@
-\version "2.25.28"
+\version "2.24.4"
 \include "LilyJAZZ.ily"
 \include "AccordsJazzDefs.ily"
 

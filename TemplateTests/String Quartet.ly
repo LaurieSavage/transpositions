@@ -1,7 +1,7 @@
 %%%%% piece.ly
 %%%%% (This is the global definitions file)
 
-\version "2.25.28"
+\version "2.24.4"
 
 \header {
   title = "Test Piece"

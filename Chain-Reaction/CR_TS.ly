@@ -1,4 +1,4 @@
-\version "2.25.28"
+\version "2.24.4"
 % automatically converted by musicxml2ly from Chain-Reaction_TS.mxl
 \pointAndClickOff
 

@@ -1,6 +1,6 @@
-\version "2.25.28"
+\version "2.24.4"
 \include "LilyJAZZ.ily"
-\version "2.25.28"
+\version "2.24.4"
 \include "LilyJAZZ.ily"
 today = \markup { \fontsize #2 \override #'(font-name . "LilyJAZZ Text")#(strftime "%d-%m-%Y" (localtime (current-time))) }
 

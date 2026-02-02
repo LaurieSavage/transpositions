@@ -1,5 +1,5 @@
 %%%%% main.ly
-\version "2.25.28"
+\version "2.24.4"
 % Use convert-ly to update this file if the version is different to the lilypond you use.
 
 \include "lilyjazz.ily"
